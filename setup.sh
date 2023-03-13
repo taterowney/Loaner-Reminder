@@ -8,11 +8,11 @@ if [ -d "$TARGET" ]; then
 else
     echo 'Setting up...'
     chmod u+x $HOME/Downloads/loaner_reminder/*
-    mkdir /Users/$USER/loaner_reminder/
-    cp $HOME/Downloads/loaner_reminder/* /Users/$USER/loaner_reminder/
+    mkdir $HOME/loaner_reminder/
+    cp $HOME/Downloads/loaner_reminder/* $HOME/loaner_reminder/
     echo 'Setup complete!'
 fi
 
 echo 'Starting the program...'
-python3 /Users/$USER/loaner_reminder/setup.py $1
+python3 $HOME/loaner_reminder/setup.py $1
 echo 'Setup complete!'
