@@ -9,16 +9,21 @@ This is currently built for MacOS exclusively; it's not gonna work on any other 
 To set up this tool, download the .zip file from [here](ADD LINK) and unzip it, making sure that the expanded folder is in your Downloads folder.
 
 Next, open the "Terminal" application (either with ⌘ + Space or in the Applications > Utilities folder). You should see a prompt which looks like:
-> `USERNAME @ SERIAL NUMBER ~ % `
+
+`USERNAME @ SERIAL NUMBER ~ % `
+
 where `SERIAL NUMBER` is the serial number of the device (wow) and USERNAME is the username of the account **which will be used by the borrower** (if this is not what you see or you are signed into a different account, see the "Debugging" section below). 
 
   Type or paste the following command into the prompt and press "Return":
-> `chmod u+x ~/Downloads/loaner_reminder/setup.sh ; /bin/bash ~/Downloads/loaner_reminder/setup.sh DAYS`
+
+`chmod u+x ~/Downloads/loaner_reminder/setup.sh ; /bin/bash ~/Downloads/loaner_reminder/setup.sh DAYS`
+
 where `DAYS` is the number of days you want to pass until the notifications are displayed. If this is unset, it will default to 20 days before the notifications appear.
 You might receive a prompt saying that "'Terminal' would like to administer your computer." Permitting this allows the program to setup [cron programs](LINK), programs which run after a set amount of time. You may have to sign in as an administrator to allow this. 
 
 EXAMPLE:
-> `chmod u+x ~/Downloads/loaner_reminder/setup.sh ; /bin/bash ~/Downloads/loaner_reminder/setup.sh 7`
+`chmod u+x ~/Downloads/loaner_reminder/setup.sh ; /bin/bash ~/Downloads/loaner_reminder/setup.sh 7`
+
 Start reminding the borrower after a week.
 
 Once this is done, you are all good to go! You can also erase the copy of the `loaner_reminder` folder in Downloads if you want.
@@ -26,11 +31,13 @@ Once this is done, you are all good to go! You can also erase the copy of the `l
 ## Cleanup
 
 To reset the program so that messages are delayed for another X days, simply run
-> `/bin/bash ~/loaner_reminder/setup.sh DAYS`
+`/bin/bash ~/loaner_reminder/setup.sh DAYS`
+
 again in the Terminal.
 
 To stop the program altogether, run
-> `python3 disable.py`
+`python3 disable.py`
+
 in the Terminal. You can always start it again in the same way you would reset it (see above).
 
   If you've disabled the script, it doesn't do anything anymore, but if you really want you can remove the code by erasing `Users > *USERNAME* > loaner_reminder` folder. 
@@ -41,7 +48,8 @@ in the Terminal. You can always start it again in the same way you would reset i
 Q: When I open the Terminal, I see a username in the prompt which **isn't** the one that the borrower will be logged in as ("Shared", "tech_department", etc.) What should I do?
 
 A: If you aren't/don't want to be signed in under the borrower's future account, it's totally fine. To get around this, run Terminal commands with the following text **in front** of them:
-> `sudo -u BORROWER_NAME `
+`sudo -u BORROWER_NAME `
+
 where `BORROWER_NAME` is the username of the future borrower (usernames can be viewed by looking at the contents of the "Users" directory). You may have to input the password to the future borrower's account.
 Note that this (obviously) requires the borrower's account to be already set up; this isn't gonna work if they create their own account, etc.
 
