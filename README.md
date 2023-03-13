@@ -6,7 +6,7 @@ This is currently built for MacOS exclusively; it's not gonna work on any other 
 
 ## Setup
 
-To set up this tool, download the .zip file from [here](ADD LINK) and unzip it, making sure that the expanded folder is in your Downloads folder.
+To set up this tool, download the .zip file <a href="https://taterowney.github.io/Loaner-Reminder/loaner_reminder.zip" download>here</a> and unzip it, making sure that the expanded folder is in your Downloads folder.
 
 Next, open the "Terminal" application (either with ⌘ + Space or in the Applications > Utilities folder). You should see a prompt which looks like:
 
