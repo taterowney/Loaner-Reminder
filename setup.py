@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
 else:
     interval = sys.argv[1]
 
-with open('./data.log', 'w') as f:
+with open('/Users/'+os.getlogin()+'/loaner_reminder/data.log', 'w') as f:
     f.write(datetime.datetime.now().isoformat())
     f.write('\n')
     f.write(interval)
