@@ -30,7 +30,7 @@ Once this is done, you are all good to go! You can also erase the copy of the `l
 
 ## Cleanup
 
-To reset the program so that messages are delayed for another X days, simply run
+To reset the program so that messages are delayed for X days (replacing the old delay), simply run
 `/bin/bash ~/loaner_reminder/setup.sh DAYS`
 
 again in the Terminal.
