@@ -7,9 +7,9 @@ if [ -d "$TARGET" ]; then
     echo "Make sure all the files are still in /Users/$USER/loaner_reminder/ if it doesn't work"
 else
     echo 'Setting up...'
-    chmod u+x $HOME/Downloads/*
+    chmod u+x $HOME/Downloads/loaner_reminder/*
     mkdir /Users/$USER/loaner_reminder/
-    cp $HOME/Downloads/* /Users/$USER/loaner_reminder/
+    cp $HOME/Downloads/loaner_reminder/* /Users/$USER/loaner_reminder/
     echo 'Setup complete!'
 fi
 
