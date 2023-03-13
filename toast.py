@@ -3,7 +3,7 @@ import tkinter
 import time
 import os
 
-passive_aggressive_message = "Please return this laptop to the IT department (room 324). If for any reason you can't use your actual laptop, feel free to talk to Melissa or Ben to check out this computer again. Thank you!"
+passive_aggressive_message = "Please return this laptop to the IT department (room 323). If for any reason you can't use your actual laptop, feel free to talk to Melissa or Ben to check out this computer again. Thank you!"
 
 
 def show_toast():
