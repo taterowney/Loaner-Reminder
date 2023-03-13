@@ -36,7 +36,7 @@ To reset the program so that messages are delayed for another X days, simply run
 again in the Terminal.
 
 To stop the program altogether, run
-`python3 disable.py`
+`python3 $HOME/loaner_reminder/disable.py`
 
 in the Terminal. You can always start it again in the same way you would reset it (see above).
 
