@@ -19,7 +19,7 @@ where `SERIAL NUMBER` is the serial number of the device (wow) and USERNAME is t
 `chmod u+x ~/Downloads/loaner_reminder/setup.sh ; /bin/bash ~/Downloads/loaner_reminder/setup.sh DAYS`
 
 where `DAYS` is the number of days you want to pass until the notifications are displayed. If this is unset, it will default to 20 days before the notifications appear.
-You might receive a prompt saying that "'Terminal' would like to administer your computer." Permitting this allows the program to setup [cron programs]([LINK](https://en.wikipedia.org/wiki/Cron)), programs which run after a set amount of time. You may have to sign in as an administrator to allow this. 
+You might receive a prompt saying that "'Terminal' would like to administer your computer." Permitting this allows the program to setup [cron programs](https://en.wikipedia.org/wiki/Cron), programs which run after a set amount of time. You may have to sign in as an administrator to allow this. 
 
 EXAMPLE:
 `chmod u+x ~/Downloads/loaner_reminder/setup.sh ; /bin/bash ~/Downloads/loaner_reminder/setup.sh 7`
